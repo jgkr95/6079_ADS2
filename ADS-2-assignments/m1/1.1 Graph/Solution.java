@@ -142,7 +142,8 @@ class Solution {
                           Integer.parseInt(tokens[1]));
             }
         }
-        System.out.println(g.getVertices() + " vertices, " + g.getEdges() + " edges");
+        System.out.println(g.getVertices() + " vertices, "
+         + g.getEdges() + " edges");
         if (cities.length < 2) {
             System.out.println("No edges");
             return;
