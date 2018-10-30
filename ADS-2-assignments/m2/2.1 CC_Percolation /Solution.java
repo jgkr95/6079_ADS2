@@ -117,7 +117,7 @@ class Percolation {
      */
     boolean percolates() {
         cc = new CC(cd);
-        return cc.connected(1, (size * size) + 1);
+        return cc.connected(0, (size * size) + 1);
     }
 }
 /**
