@@ -20,8 +20,8 @@ final class Solution {
         int e = Integer.parseInt(sc.nextLine());
         while (sc.hasNext()) {
             String[] tokens = sc.nextLine().split(" ");
-            gph.addEdge(Integer.parseInt(tokens[0])
-                , Integer.parseInt(tokens[1]));
+            gph.addEdge(Integer.parseInt(tokens[0]),
+                Integer.parseInt(tokens[1]));
         }
         DirectedCycle cycle = new DirectedCycle(gph);
         if (cycle.hasCycle()) {
