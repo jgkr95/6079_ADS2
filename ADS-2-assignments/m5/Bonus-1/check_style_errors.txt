@@ -6,8 +6,10 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:3:29: Parameter args should be final. [FinalParameters]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:11:33: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:11:34: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:21:18: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:21:19: '=' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Graph.java:94:37: Parameter v should be final. [FinalParameters]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Graph.java:96:12: 'for' is not followed by whitespace. [WhitespaceAround]

@@ -18,6 +18,7 @@ class Solution {
             if (gh.hasParallelEdges(i)) {
                 pcount++;
             }
+            count=0;
             int id = idArr[i];
             for (int j = 0; i < idArr.length; i++) {
                 if (id == idArr[j]) {
