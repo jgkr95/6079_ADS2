@@ -4,7 +4,11 @@ class Solution {
         Scanner scan = new Scanner(System.in);
         int ver = scan.nextInt(), pcount = 0, maxcount = 0, count = 0;
         int edges = scan.nextInt();
-        Graph gh = new Graph(ver);
+        if (edges == 0) {
+            System.out.println(edges);
+            return;
+        }
+        Graph gh = new Graph(ver+1);
         for (int i = 0; i < edges; i++) {
             gh.addEdge(scan.nextInt(), scan.nextInt());
         }
