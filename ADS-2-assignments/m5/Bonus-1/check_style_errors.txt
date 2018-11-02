@@ -1,0 +1,23 @@
+Starting audit...
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Solution.java:3:29: Parameter args should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 5 errors.
+Starting audit...
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Graph.java:94:37: Parameter v should be final. [FinalParameters]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Graph.java:96:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Graph.java:96:25: ')' is preceded with whitespace. [ParenPad]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Graph.java:96:27: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/Graph.java:97:15: 'if' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 5 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/CC.java:114:5: Class 'CC' looks like designed for extension (can be subclassed), but the method 'idArr' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CC' final or making the method 'idArr' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m5/Bonus-1/CC.java:114:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 2 errors.
