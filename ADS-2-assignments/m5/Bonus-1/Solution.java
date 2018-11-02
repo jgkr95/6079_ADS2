@@ -20,7 +20,7 @@ class Solution {
             }
             count=0;
             int id = idArr[i];
-            for (int j = 0; i < idArr.length; i++) {
+            for (int j = 0; j < idArr.length; j++) {
                 if (id == idArr[j]) {
                     count++;
                 }
