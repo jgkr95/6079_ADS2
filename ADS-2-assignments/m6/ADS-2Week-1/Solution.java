@@ -12,7 +12,7 @@ class PageRank {
 
 		pr = new double[dg.V()];
 		for(int i=0;i<dg.V();i++) {
-			pr[i]=1/dg.V();
+			pr[i]=1/4;
 			// incoming=dgRev.adj(i);
 			// for(int j=0;j<1000;j++) {
 			// 	for(Integer w:incoming) {
