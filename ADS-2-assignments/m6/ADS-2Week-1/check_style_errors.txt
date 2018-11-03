@@ -38,10 +38,7 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:26:39: '<' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:26:44: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:27:36: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:28:46: '+=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:28:48: '+=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:28:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:28:54: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:27:57: Must have at least one statement. [EmptyBlock]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:33:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:33:29: Parameter v should be final. [FinalParameters]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:36:9: Missing a Javadoc comment. [JavadocMethod]
@@ -86,7 +83,7 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:81: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:86: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 86 errors.
+Checkstyle ends with 83 errors.
 Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Digraph.java:14: Line has trailing spaces. [RegexpSingleline]

@@ -25,7 +25,7 @@ class PageRank {
 			incoming=dgRev.adj(i);
 			for(int j=0;j<1000;j++) {
 				for(Integer w:incoming) {
-					pr[i]+=pr[w]+dgh.outdegree(w);
+					// pr[i]+=pr[w]+dgh.outdegree(w);
 				}
 			}
 		}
