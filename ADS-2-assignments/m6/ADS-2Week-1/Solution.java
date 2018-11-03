@@ -7,21 +7,21 @@ class PageRank {
     /**
      * page rank array.
      */
-    double[] pr;
+    private double[] pr;
     /**
      * Incoming edges.
      */
-    Iterable<Integer> incoming;
+    private Iterable<Integer> incoming;
     /**
      * Constructs the object and calculates values of pagerank array.
      * Time complexity is O(V*1000*E).
      * @param      dg    { Digraph object }
      */
-    PageRank(Digraph dg) {
+    PageRank(final Digraph dg) {
         Digraph dgh = dg;
         Digraph dgRev = new Digraph(dg.V());
         dgRev = dg.reverse();
-
+        final int thousand = 1000;
         pr = new double[dg.V()];
         for (int i = 0; i < dg.V(); i++) {
             pr[i] = (double) 1 / dg.V();
@@ -35,9 +35,11 @@ class PageRank {
         for (int i = 0; i < dg.V(); i++) {
             // pr[i]=1/dg.V();
             incoming = dgRev.adj(i);
-            for (int j = 0; j < 1000; j++) {
+            for (int j = 0; j < thousand; j++) {
                 for (Integer w : incoming) {
+                    pr[i]=pr[i];
                     // pr[i]+=pr[w]+dgh.outdegree(w);
+
                 }
             }
         }
@@ -49,7 +51,7 @@ class PageRank {
      *
      * @return     The pr.
      */
-    public double getPR(int v) {
+    public double getPR(final int v) {
         return pr[v];
     }
     /**
@@ -66,20 +68,20 @@ class PageRank {
         return str;
     }
 }
-/**
- * Class for web search.
- */
-class WebSearch {
-    /**
-     * Constructs the object.
-     */
-    private WebSearch() { }
-}
+// /**
+//  * Class for web search.
+//  */
+// class WebSearch {
+//     /**
+//      * Constructs the object.
+//      */
+//     private WebSearch() { }
+// }
 
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -89,7 +91,7 @@ public class Solution {
      * Time complexity is O(V*1000*E).
      * @param      args  The arguments are String array type
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         // read the first line of the input to get the number of vertices
         int vertices = Integer.parseInt(scan.nextLine());
