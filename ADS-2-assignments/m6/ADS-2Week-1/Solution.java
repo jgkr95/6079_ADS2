@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for page rank.
  */
@@ -8,6 +9,7 @@ class PageRank {
      * page rank array.
      */
     private double[] pr;
+    private double[] prevpr;
     /**
      * Incoming edges.
      */
@@ -23,6 +25,7 @@ class PageRank {
         dgRev = dg.reverse();
         final int thousand = 1000;
         pr = new double[dg.V()];
+        prevpr= new double[dg.V()];
         for (int i = 0; i < dg.V(); i++) {
             pr[i] = (double) 1 / dg.V();
             // incoming=dgRev.adj(i);
@@ -32,15 +35,21 @@ class PageRank {
             //  }
             // }
         }
+        // System.arraycopy(pr, prevpr, 0, dg.V());
+                prevpr=Arrays.copyOf(pr,pr.length);
+
         for (int i = 0; i < dg.V(); i++) {
             // pr[i]=1/dg.V();
             incoming = dgRev.adj(i);
             for (int j = 0; j < thousand; j++) {
                 for (Integer w : incoming) {
                     pr[i] = pr[i];
-                    // pr[i]+=pr[w]+dgh.outdegree(w);
+                    pr[i]+=pr[w]/dgh.outdegree(w);
 
                 }
+                // System.arraycopy(pr, prevpr, 0, dg.V());
+                                prevpr=Arrays.copyOf(pr,pr.length);
+
             }
         }
     }
