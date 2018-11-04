@@ -30,8 +30,8 @@ class PageRank {
             pr[i] = 1.0 / dg.V();
 
         }
-        // System.arraycopy(pr, prevpr, 0, dg.V());
-                prevpr=Arrays.copyOf(pr,pr.length);
+         System.arraycopy(pr, 0, prevpr, 0, dg.V());
+        //prevpr=Arrays.copyOf(pr,pr.length);
 
         for (int j = 0; j < thousand; j++) {
             // pr[i]=1/dg.V();
@@ -43,9 +43,9 @@ class PageRank {
                     pr[i]+=prevpr[w]/dgh.outdegree(w);
 
                 }
-                // System.arraycopy(pr, prevpr, 0, dg.V());
+                 System.arraycopy(pr, 0, prevpr, 0, dg.V());
                 if(Arrays.equals(pr, prevpr)) break;
-                prevpr=Arrays.copyOf(pr,pr.length);
+                //prevpr=Arrays.copyOf(pr,pr.length);
 
             }
         }
