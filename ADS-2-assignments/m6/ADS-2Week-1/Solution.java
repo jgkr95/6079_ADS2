@@ -33,12 +33,13 @@ class PageRank {
         // System.arraycopy(pr, prevpr, 0, dg.V());
                 prevpr=Arrays.copyOf(pr,pr.length);
 
-        for (int i = 0; i < dg.V(); i++) {
+        for (int j = 0; j < thousand; j++) {
             // pr[i]=1/dg.V();
-            incoming = dgRev.adj(i);
-            pr[i] = 0;
-            for (int j = 0; j < thousand; j++) {
-                for (Integer w : incoming) {
+            
+            
+            for (int i = 0; i < dg.V(); i++) {
+            	pr[i] = 0.0;
+                for (Integer w :  dgRev.adj(i)) {
                     pr[i]+=prevpr[w]/dgh.outdegree(w);
 
                 }
