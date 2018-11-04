@@ -8,14 +8,14 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:43:28: '+=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:43:37: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:43:38: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:47: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:47:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:113: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:114: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:115: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:116: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:116:46: '!=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:116:48: '!=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:46: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:46:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:112: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:113: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:114: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:115: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:115:46: '!=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:115:48: '!=' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...

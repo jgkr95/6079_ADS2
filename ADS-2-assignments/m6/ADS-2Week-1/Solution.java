@@ -43,9 +43,8 @@ class PageRank {
                     pr[i]+=prevpr[w]/dgh.outdegree(w);
 
                 }
-                 System.arraycopy(pr, 0, prevpr, 0, dg.V());
                 if(Arrays.equals(pr, prevpr)) break;
-                //prevpr=Arrays.copyOf(pr,pr.length);
+                 System.arraycopy(pr, 0, prevpr, 0, dg.V());
 
             }
         }
