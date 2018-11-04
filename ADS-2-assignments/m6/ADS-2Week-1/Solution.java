@@ -27,13 +27,8 @@ class PageRank {
         pr = new double[dg.V()];
         prevpr= new double[dg.V()];
         for (int i = 0; i < dg.V(); i++) {
-            pr[i] = (double) 1 / dg.V();
-            // incoming=dgRev.adj(i);
-            // for(int j=0;j<1000;j++) {
-            //  for(Integer w:incoming) {
-            //      pr[i]+=pr[w]+dgh.outdegree(w);
-            //  }
-            // }
+            pr[i] = 1.0 / dg.V();
+
         }
         // System.arraycopy(pr, prevpr, 0, dg.V());
                 prevpr=Arrays.copyOf(pr,pr.length);
@@ -41,6 +36,7 @@ class PageRank {
         for (int i = 0; i < dg.V(); i++) {
             // pr[i]=1/dg.V();
             incoming = dgRev.adj(i);
+            pr[i] = 0;
             for (int j = 0; j < thousand; j++) {
                 for (Integer w : incoming) {
                     pr[i]+=prevpr[w]/dgh.outdegree(w);
@@ -48,7 +44,7 @@ class PageRank {
                 }
                 // System.arraycopy(pr, prevpr, 0, dg.V());
                 if(Arrays.equals(pr, prevpr)) break;
-                                prevpr=Arrays.copyOf(pr,pr.length);
+                prevpr=Arrays.copyOf(pr,pr.length);
 
             }
         }
@@ -113,7 +109,10 @@ public final class Solution {
             }
         }
         System.out.println(dg);
-
+        for (int v = 0; v < vertices; v++)
+			if (dg.outdegree(v) == 0)
+				for (int w = 0; w < vertices; w++)
+					if (v!=w) dg.addEdge(v, w);
 
         // iterate count of vertices times
         // to read the adjacency list from std input
