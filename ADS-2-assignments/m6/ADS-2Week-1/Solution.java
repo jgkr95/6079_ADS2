@@ -48,6 +48,7 @@ class PageRank {
 
                 }
                 // System.arraycopy(pr, prevpr, 0, dg.V());
+                if(Arrays.equals(pr, prevpr)) break;
                                 prevpr=Arrays.copyOf(pr,pr.length);
 
             }
