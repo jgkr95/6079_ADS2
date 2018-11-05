@@ -10,16 +10,16 @@ class PageRank {
      */
     private double[] pr;
     /**
-     * prevoiuse pagerank values.
+     * prevoius pagerank values.
      */
-    private double[] prevpr;
+    private double[] prevPr;
     /**
      * Incoming edges.
      */
     private Iterable<Integer> incoming;
     /**
      * Constructs the object and calculates values of pagerank array.
-     * Time complexity is O(V*1000*E).
+     * Time complexity is O(1000(V+E)).
      * @param      dg    { Digraph object }
      */
     PageRank(final Digraph dg) {
@@ -28,13 +28,13 @@ class PageRank {
         dgRev = dg.reverse();
         final int thousand = 1000;
         pr = new double[dg.V()];
-        prevpr = new double[dg.V()];
+        prevPr = new double[dg.V()];
         for (int i = 0; i < dg.V(); i++) {
             pr[i] = 1.0 / dg.V();
 
         }
-        System.arraycopy(pr, 0, prevpr, 0, dg.V());
-        //prevpr=Arrays.copyOf(pr,pr.length);
+        System.arraycopy(pr, 0, prevPr, 0, dg.V());
+        //prevPr=Arrays.copyOf(pr,pr.length);
 
         for (int j = 0; j < thousand; j++) {
             // pr[i]=1/dg.V();
@@ -43,14 +43,14 @@ class PageRank {
             for (int i = 0; i < dg.V(); i++) {
                 pr[i] = 0.0;
                 for (Integer w :  dgRev.adj(i)) {
-                    pr[i] += prevpr[w] / dgh.outdegree(w);
+                    pr[i] += prevPr[w] / dgh.outdegree(w);
 
                 }
             }
-            if (Arrays.equals(pr, prevpr)) {
+            if (Arrays.equals(pr, prevPr)) {
                 break;
             }
-            System.arraycopy(pr, 0, prevpr, 0, dg.V());
+            System.arraycopy(pr, 0, prevPr, 0, dg.V());
 
         }
     }
@@ -98,7 +98,7 @@ public final class Solution {
     private Solution() { }
     /**
      * { main method to handle the input }.
-     * Time complexity is O(V*1000*E).
+     * Time complexity is O(1000(V+E)).
      * @param      args  The arguments are String array type
      */
     public static void main(final String[] args) {
