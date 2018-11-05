@@ -1,5 +1,6 @@
 /**
  * Class for kruskal mst.
+ * Time complexity is O(ElogE)
  */
 public class KruskalMST {
     /**

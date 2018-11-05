@@ -10,8 +10,8 @@ class Solution {
 
     }
     /**
-     * main method.
-     * Time complexity : O(v).
+     * main method to handle the input.
+     * Time complexity : O(V).
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -19,15 +19,15 @@ class Solution {
         int vertices = sc.nextInt();
         int edges = sc.nextInt();
         sc.nextLine();
-        EdgeWeightedGraph ewd = new EdgeWeightedGraph(vertices);
+        EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
         while (sc.hasNextLine()) {
             String[] tokens = sc.nextLine().split(" ");
             Edge e = new Edge(Integer.parseInt(tokens[0]),
                               Integer.parseInt(tokens[1]),
                                Double.parseDouble(tokens[2]));
-            ewd.addEdge(e);
+            ewg.addEdge(e);
         }
-        KruskalMST mst = new KruskalMST(ewd);
+        KruskalMST mst = new KruskalMST(ewg);
         System.out.format("%.5f", mst.weight());
     }
 }
