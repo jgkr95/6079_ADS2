@@ -42,24 +42,29 @@ public class EdgeWeightedGraph {
     }
 
     /**
-     * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
+     * Initializes a random edge-weighted graph
+     * with {@code V} vertices and <em>E</em> edges.
      *
-     * @param  gph the edge-weighted graph to copy
+     * @param  V the number of vertices
+     * @param  E the number of edges
+     * @throws IllegalArgumentException if {@code V < 0}
+     * @throws IllegalArgumentException if {@code E < 0}
      */
-    public EdgeWeightedGraph(final EdgeWeightedGraph gph) {
-        this(gph.vertex());
-        this.edge = gph.e();
-        for (int v = 0; v < gph.vertex(); v++) {
-            // reverse so that adjacency list is in same order as original
-            Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : gph.adj[v]) {
-                reverse.push(e);
-            }
-            for (Edge e : reverse) {
-                adj[v].add(e);
-            }
-        }
-    }
+    // public EdgeWeightedGraph(int V, int E) {
+    //     this(V);
+    //     if (E < 0) {
+    //     throw new IllegalArgumentException(
+    //     "Number of edges must be nonnegative");
+    //     }
+    //     for (int i = 0; i < E; i++) {
+    //         int v = StdRandom.uniform(V);
+    //         int w = StdRandom.uniform(V);
+    //         double weight = Math.round(100 * StdRandom.uniform()) / 100.0;
+    //         Edge e = new Edge(v, w, weight);
+    //         addEdge(e);
+    //     }
+    // }
+
 
 
     /**
@@ -182,3 +187,4 @@ public class EdgeWeightedGraph {
         return s.toString();
     }
 }
+
