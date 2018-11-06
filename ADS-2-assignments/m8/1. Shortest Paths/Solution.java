@@ -10,28 +10,27 @@ final class Solution {
     private Solution() {
     }
     /**
-     *the main method is to read the user.
-     * input.
+     * Main method to handle the input.
      *time complexity is O(E + V)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        HashMap<String, Integer> mapping
+        HashMap<String, Integer> map
         = new HashMap<String, Integer>();
         String[] tokens = sc.nextLine().split(" ");
         int edges = Integer.parseInt(tokens[1]);
         String[] vertices = sc.nextLine().split(" ");
         for (int i = 0; i < vertices.length; i++) {
-            mapping.put(vertices[i], i);
+            map.put(vertices[i], i);
         }
         Edge edge;
         EdgeWeightedGraph ewg
         = new EdgeWeightedGraph(vertices.length);
         for (int i = 0; i < edges; i++) {
             String[] directPath = sc.nextLine().split(" ");
-            edge = new Edge(mapping.get(directPath[0]),
-                               mapping.get(directPath[1]),
+            edge = new Edge(map.get(directPath[0]),
+                               map.get(directPath[1]),
                                Double.parseDouble(directPath[2]));
             ewg.addEdge(edge);
         }
@@ -39,9 +38,9 @@ final class Solution {
         DijkstraSP d;
         for (int i = 0; i < queries; i++) {
             String[] check = sc.nextLine().split(" ");
-            int source = mapping.get(check[0]);
+            int source = map.get(check[0]);
             d = new DijkstraSP(ewg, source);
-            System.out.println((int) d.distance(mapping.get(check[1])));
+            System.out.println((int) d.distance(map.get(check[1])));
         }
     }
 }
