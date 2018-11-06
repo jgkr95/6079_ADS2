@@ -41,6 +41,7 @@ final class Solution {
             String[] check = sc.nextLine().split(" ");
             int source = mapping.get(check[0]);
             d = new DijkstraSP(ewg, source);
+            System.out.println((int) d.distance(mapping.get(check[0])));
         }
     }
 }
