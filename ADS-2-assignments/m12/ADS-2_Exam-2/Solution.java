@@ -50,21 +50,21 @@ public class Solution {
         ewg, Integer.parseInt(tokens2[0]));
       DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(
         ewg, Integer.parseInt(tokens2[1]));
-      String s = "";
+      String str = "";
       if (sp1.hasPathTo(Integer.parseInt(tokens2[2]))) {
         int i = 0;
         System.out.println(sp1.distTo(Integer.parseInt(tokens2[1]))
          + sp2.distTo(Integer.parseInt(tokens2[2])));
         for (Integer e : sp1.pathTo(Integer.parseInt(tokens2[1]))) {
-          s += e + " ";
+          str += e + " ";
         }
         for (Integer e : sp2.pathTo(Integer.parseInt(tokens2[2]))) {
           if (i != 0) {
-            s += e + " ";
+            str += e + " ";
           }
-          i += 1;
+          i++;
         }
-        System.out.println(s.substring(0, s.length() - 1));
+        System.out.println(str.substring(0, str.length() - 1));
       } else {
         System.out.println("No Path Found.");
       }
