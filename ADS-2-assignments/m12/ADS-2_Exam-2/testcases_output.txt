@@ -10,11 +10,11 @@ Expected Output:
 
 Your Output: 
 6 6
-0: Edge@3a03464  Edge@2d3fcdbd  
-1: Edge@617c74e5  Edge@6537cf78  Edge@2d3fcdbd  
-2: Edge@67b6d4ae  Edge@34b7bfc0  Edge@617c74e5  
-3: Edge@34b7bfc0  Edge@3a03464  
-4: Edge@67b6d4ae  Edge@6537cf78  
+0: Edge@77b52d12  Edge@3a03464  
+1: Edge@2d3fcdbd  Edge@617c74e5  Edge@3a03464  
+2: Edge@6537cf78  Edge@67b6d4ae  Edge@2d3fcdbd  
+3: Edge@67b6d4ae  Edge@77b52d12  
+4: Edge@6537cf78  Edge@617c74e5  
 5:
 ----------------------------------------
 
@@ -34,16 +34,16 @@ Expected Output:
 
 Your Output: 
 10 11
-0: Edge@3a03464  Edge@2d3fcdbd  
-1: Edge@617c74e5  Edge@6537cf78  Edge@67b6d4ae  
-2: Edge@34b7bfc0  Edge@366e2eef  Edge@6df97b55  
-3: Edge@3cbbc1e0  
-4: Edge@35fb3008  Edge@6df97b55  Edge@2d3fcdbd  
-5: Edge@35fb3008  Edge@366e2eef  
-6: Edge@67b6d4ae  
-7: Edge@7225790e  Edge@3cbbc1e0  Edge@617c74e5  Edge@6537cf78  Edge@3a03464  
+0: Edge@77b52d12  Edge@3a03464  
+1: Edge@2d3fcdbd  Edge@617c74e5  Edge@6537cf78  
+2: Edge@67b6d4ae  Edge@34b7bfc0  Edge@366e2eef  
+3: Edge@6df97b55  
+4: Edge@3cbbc1e0  Edge@366e2eef  Edge@3a03464  
+5: Edge@3cbbc1e0  Edge@34b7bfc0  
+6: Edge@6537cf78  
+7: Edge@35fb3008  Edge@6df97b55  Edge@2d3fcdbd  Edge@617c74e5  Edge@77b52d12  
 8: 
-9: Edge@7225790e  Edge@34b7bfc0
+9: Edge@35fb3008  Edge@67b6d4ae
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
