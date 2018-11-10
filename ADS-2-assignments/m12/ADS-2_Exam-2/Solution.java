@@ -11,7 +11,8 @@ public final class Solution {
     }
     /**
      * Main method to handle to input.
-     *
+     * Time complexity is O(EV) because we are using
+     * DijkstraUndirectedSP.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -62,19 +63,19 @@ public final class Solution {
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
             String[] tokens2 = scan.nextLine().split(" ");
-            DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(
+            DijkstraUndirectedSP d1 = new DijkstraUndirectedSP(
                 ewg, Integer.parseInt(tokens2[0]));
-            DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(
+            DijkstraUndirectedSP d2 = new DijkstraUndirectedSP(
                 ewg, Integer.parseInt(tokens2[1]));
             String str = "";
-            if (sp1.hasPathTo(Integer.parseInt(tokens2[2]))) {
+            if (d1.hasPathTo(Integer.parseInt(tokens2[2]))) {
                 int i = 0;
-                System.out.println(sp1.distTo(Integer.parseInt(tokens2[1]))
-                                   + sp2.distTo(Integer.parseInt(tokens2[2])));
-                for (Integer e : sp1.pathTo(Integer.parseInt(tokens2[1]))) {
+                System.out.println(d1.distTo(Integer.parseInt(tokens2[1]))
+                                   + d2.distTo(Integer.parseInt(tokens2[2])));
+                for (Integer e : d1.pathTo(Integer.parseInt(tokens2[1]))) {
                     str += e + " ";
                 }
-                for (Integer e : sp2.pathTo(Integer.parseInt(tokens2[2]))) {
+                for (Integer e : d2.pathTo(Integer.parseInt(tokens2[2]))) {
                     if (i != 0) {
                         str += e + " ";
                     }
