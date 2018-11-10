@@ -9,12 +9,12 @@ Expected Output:
 5:
 
 Your Output: 
-6 6
-0: Edge@77b52d12  Edge@3a03464  
-1: Edge@2d3fcdbd  Edge@617c74e5  Edge@3a03464  
-2: Edge@6537cf78  Edge@67b6d4ae  Edge@2d3fcdbd  
-3: Edge@67b6d4ae  Edge@77b52d12  
-4: Edge@6537cf78  Edge@617c74e5  
+6vertices6edges
+0: 0-3 1.0   0-1 2.0   
+1: 1-2 4.0   1-4 5.0   0-1 2.0   
+2: 2-4 1.0   3-2 3.0   1-2 4.0   
+3: 3-2 3.0   0-3 1.0   
+4: 2-4 1.0   1-4 5.0   
 5:
 ----------------------------------------
 
@@ -33,17 +33,17 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-10 11
-0: Edge@77b52d12  Edge@3a03464  
-1: Edge@2d3fcdbd  Edge@617c74e5  Edge@6537cf78  
-2: Edge@67b6d4ae  Edge@34b7bfc0  Edge@366e2eef  
-3: Edge@6df97b55  
-4: Edge@3cbbc1e0  Edge@366e2eef  Edge@3a03464  
-5: Edge@3cbbc1e0  Edge@34b7bfc0  
-6: Edge@6537cf78  
-7: Edge@35fb3008  Edge@6df97b55  Edge@2d3fcdbd  Edge@617c74e5  Edge@77b52d12  
+10vertices11edges
+0: 0-7 221.0   0-4 78.0   
+1: 1-7 158.0   1-7 159.0   1-6 92.0   
+2: 2-9 237.0   2-5 179.0   2-4 55.0   
+3: 3-7 205.0   
+4: 4-5 191.0   2-4 55.0   0-4 78.0   
+5: 4-5 191.0   2-5 179.0   
+6: 1-6 92.0   
+7: 7-9 157.0   3-7 205.0   1-7 158.0   1-7 159.0   0-7 221.0   
 8: 
-9: Edge@35fb3008  Edge@67b6d4ae
+9: 7-9 157.0   2-9 237.0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
