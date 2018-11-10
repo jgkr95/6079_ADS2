@@ -123,7 +123,8 @@ public class Edge implements Comparable<Edge> {
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
-     */public String toString() {
+     */
+    public String toString() {
         return v + "-" + w + " " + String.format("%.5f", weight);
     }
 }
