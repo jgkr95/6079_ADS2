@@ -123,6 +123,6 @@ public class Edge implements Comparable<Edge> {
      * { item_description }.
      */
     public String toString() {
-        return v+"-"+w+" "+String.format("0.5f", weight);
+        return v+"-"+w+" "+String.format("%.5f", weight);
     }
 }
