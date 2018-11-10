@@ -35,7 +35,5 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:126:24: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:126:27: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:126:28: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:126:34: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:126:35: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 9 errors.
