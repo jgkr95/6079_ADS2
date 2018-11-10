@@ -15,10 +15,16 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:13:40: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:13:41: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:29: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:36: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:37: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:33:39: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:33:40: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:34: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:34:37: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:34:38: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:35: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:39: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:40: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -37,3 +43,7 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Edge.java:126:28: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 9 errors.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
