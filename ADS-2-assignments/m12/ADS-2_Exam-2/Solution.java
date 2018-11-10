@@ -35,7 +35,7 @@ public class Solution {
             // if ((int) d.distance(Integer.parseInt(paths[1])) == 0) {
             //     System.out.println("No Path Found.");
             // } else {
-                System.out.format("%.1f", (int) d.distance(Integer.parseInt(paths[1])));
+                System.out.format("%.1f",d.distance(Integer.parseInt(paths[1])));
                  break;
 
         case "ViaPaths":

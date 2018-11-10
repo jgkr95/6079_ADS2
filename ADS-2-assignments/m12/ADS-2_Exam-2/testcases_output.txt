@@ -56,18 +56,12 @@ Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:38)
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 370.0
 
 Your Output: 
-Exception in thread "main" java.util.IllegalFormatConversionException: f != java.lang.Integer
-	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4421)
-	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2949)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2896)
-	at java.base/java.util.Formatter.format(Formatter.java:2671)
-	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
-	at Solution.main(Solution.java:38)
+370.0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
