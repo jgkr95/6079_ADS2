@@ -1,6 +1,4 @@
 Starting audit...
-Audit done.
-Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]

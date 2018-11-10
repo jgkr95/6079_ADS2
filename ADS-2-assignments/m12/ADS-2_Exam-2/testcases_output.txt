@@ -9,8 +9,13 @@ Expected Output:
 5:
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:22)
+6 6
+0: Edge@3a03464  Edge@2d3fcdbd  
+1: Edge@617c74e5  Edge@6537cf78  Edge@2d3fcdbd  
+2: Edge@67b6d4ae  Edge@34b7bfc0  Edge@617c74e5  
+3: Edge@34b7bfc0  Edge@3a03464  
+4: Edge@67b6d4ae  Edge@6537cf78  
+5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -28,8 +33,17 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:22)
+10 11
+0: Edge@3a03464  Edge@2d3fcdbd  
+1: Edge@617c74e5  Edge@6537cf78  Edge@67b6d4ae  
+2: Edge@34b7bfc0  Edge@366e2eef  Edge@6df97b55  
+3: Edge@3cbbc1e0  
+4: Edge@35fb3008  Edge@6df97b55  Edge@2d3fcdbd  
+5: Edge@35fb3008  Edge@366e2eef  
+6: Edge@67b6d4ae  
+7: Edge@7225790e  Edge@3cbbc1e0  Edge@617c74e5  Edge@6537cf78  Edge@3a03464  
+8: 
+9: Edge@7225790e  Edge@34b7bfc0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -37,8 +51,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:22)
+
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -46,8 +59,7 @@ Expected Output:
 370.0
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:22)
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -55,8 +67,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:22)
+
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -65,7 +76,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:22)
+
 ----------------------------------------
 
