@@ -32,12 +32,12 @@ public class Solution {
             // Other wise print "No Path Found."
             String[] paths = scan.nextLine().split(" ");
             DijkstraSP d = new DijkstraSP(ewg, Integer.parseInt(paths[0]));
-            if (d.hasPathTo(Integer.parseInt(paths[1]))) {
+            if (!d.hasPathTo(Integer.parseInt(paths[1]))) {
                 System.out.println("No Path Found.");
             } else {
-                System.out.format("%.1f",d.distance(Integer.parseInt(paths[1])));
+                System.out.format("%.1f", d.distance(Integer.parseInt(paths[1])));
             }
-                 break;
+            break;
 
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
@@ -47,21 +47,25 @@ public class Solution {
             // Other wise print "No Path Found."
             String[] path = scan.nextLine().split(" ");
             String str = "";
-            d = new DijkstraSP(ewg, Integer.parseInt(path[0]));
-            double dist = d.distance(Integer.parseInt(path[1]));
-            for(Edge e:d.pathTo(Integer.parseInt(path[1]))){
-                str += e.either()+" ";
-            }
-            d = new DijkstraSP(ewg, Integer.parseInt(path[1]));
-            dist += d.distance(Integer.parseInt(path[2]));
-            for(Edge e:d.pathTo(Integer.parseInt(path[2]))){
-                str += e.either()+" ";
-            }
-            System.out.println(dist);
-            System.out.println(str);
-
-
             
+                d = new DijkstraSP(ewg, Integer.parseInt(path[0]));
+                double dist = d.distance(Integer.parseInt(path[1]));
+                if (!d.hasPathTo(Integer.parseInt(path[2])))  {
+                System.out.println("No Path Found.");
+            } else {
+                for (Edge e : d.pathTo(Integer.parseInt(path[1]))) {
+                    str += e.either() + " ";
+                }
+                d = new DijkstraSP(ewg, Integer.parseInt(path[1]));
+                dist += d.distance(Integer.parseInt(path[2]));
+                for (Edge e : d.pathTo(Integer.parseInt(path[2]))) {
+                    str += e.either() + " ";
+                }
+                System.out.println(dist);
+                System.out.println(str);
+            }
+
+
             break;
 
         default:
