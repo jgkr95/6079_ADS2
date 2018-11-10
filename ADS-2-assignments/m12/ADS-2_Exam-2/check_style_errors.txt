@@ -20,11 +20,15 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:34: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:34:37: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:34:38: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:35: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:39: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:40: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:35:28: 'try' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:35:28: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:36: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:36:49: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:37:32: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:43: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:44: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 28 errors.
 Starting audit...
 Audit done.
 Starting audit...

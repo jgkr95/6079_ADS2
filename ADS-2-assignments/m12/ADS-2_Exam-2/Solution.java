@@ -32,7 +32,11 @@ public class Solution {
 			// Other wise print "No Path Found."
 			String[] paths=scan.nextLine().split(" ");
 			DijkstraSP d=new DijkstraSP(ewg, Integer.parseInt(paths[0]));
-			System.out.println((int) d.distance(Integer.parseInt(paths[1])));
+			try{
+			System.out.format("%.1",(int) d.distance(Integer.parseInt(paths[1])));
+			} catch(Exception e) {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		case "ViaPaths":
