@@ -26,9 +26,9 @@
  * Class for edge.
  */
 public class Edge implements Comparable<Edge> {
-   /**
-    * vertex v.
-    */
+    /**
+     * vertex v.
+     */
     private final int v;
     /**
      * vertex w.
@@ -120,9 +120,10 @@ public class Edge implements Comparable<Edge> {
         return Double.compare(this.weight, that.weight);
     }
     /**
-     * { item_description }.
-     */
-    public String toString() {
-        return v+"-"+w+" "+String.format("%.5f", weight);
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */public String toString() {
+        return v + "-" + w + " " + String.format("%.5f", weight);
     }
 }
