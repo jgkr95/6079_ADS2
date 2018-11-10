@@ -4,8 +4,10 @@ Starting audit...
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:4:29: Parameter args should be final. [FinalParameters]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:34: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] /Users/tarunj/6079_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:44: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...

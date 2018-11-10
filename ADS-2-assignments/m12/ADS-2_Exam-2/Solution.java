@@ -30,20 +30,35 @@ public class Solution {
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
-           String[] path = scan.nextLine().split(" ");
-      DijkstraUndirectedSP d = new DijkstraUndirectedSP(
-        ewg, Integer.parseInt(path[0]));
-      DijkstraUndirectedSP d2 = new DijkstraUndirectedSP(
-        ewg, Integer.parseInt(path[1]));
+            String[] paths = scan.nextLine().split(" ");
+            DijkstraUndirectedSP d = new DijkstraUndirectedSP(ewg, Integer.parseInt(paths[0]));
+            if (!d.hasPathTo(Integer.parseInt(paths[1]))) {
+                System.out.println("No Path Found.");
+            } else {
+                System.out.format("%.1f", d.distTo(Integer.parseInt(paths[1])));
+            }
+            break;
+
+        case "ViaPaths":
+            // Handle the case of ViaPaths, where three integers are given.
+            // First is the source and second is the via is the one where path should pass throuh.
+            // third is the destination.
+            // If the path exists print the distance between them.
+            // Other wise print "No Path Found."
+            String[] tokens2 = scan.nextLine().split(" ");
+      DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(
+        ewg, Integer.parseInt(tokens2[0]));
+      DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(
+        ewg, Integer.parseInt(tokens2[1]));
       String s = "";
-      if (d.hasPathTo(Integer.parseInt(path[2]))) {
+      if (sp1.hasPathTo(Integer.parseInt(tokens2[2]))) {
         int i = 0;
-        System.out.println(d.distTo(Integer.parseInt(path[1]))
-         + d2.distTo(Integer.parseInt(path[2])));
-        for (Integer e : d.pathTo(Integer.parseInt(path[1]))) {
+        System.out.println(sp1.distTo(Integer.parseInt(tokens2[1]))
+         + sp2.distTo(Integer.parseInt(tokens2[2])));
+        for (Integer e : sp1.pathTo(Integer.parseInt(tokens2[1]))) {
           s += e + " ";
         }
-        for (Integer e : d2.pathTo(Integer.parseInt(path[2]))) {
+        for (Integer e : sp2.pathTo(Integer.parseInt(tokens2[2]))) {
           if (i != 0) {
             s += e + " ";
           }
@@ -53,10 +68,7 @@ public class Solution {
       } else {
         System.out.println("No Path Found.");
       }
-
-
-            break;
-
+      break;
         default:
             break;
         }
