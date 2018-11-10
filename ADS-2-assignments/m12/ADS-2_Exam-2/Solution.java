@@ -57,6 +57,7 @@ public class Solution {
                 str += e.either()+" ";
             }
             System.out.println(dist);
+            System.out.println(str);
 
 
             
