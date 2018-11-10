@@ -54,12 +54,12 @@ public class Solution {
                 System.out.println("No Path Found.");
             } else {
                 for (Edge e : d.pathTo(Integer.parseInt(path[1]))) {
-                    str += e.either() + " ";
+                    str += e.other(Integer.parseInt(path[1])) + " ";
                 }
                 d = new DijkstraSP(ewg, Integer.parseInt(path[1]));
                 dist += d.distance(Integer.parseInt(path[2]));
                 for (Edge e : d.pathTo(Integer.parseInt(path[2]))) {
-                    str += e.either() + " ";
+                    str += e.other(Integer.parseInt(path[1])) + " ";
                 }
                 System.out.println(dist);
                 System.out.println(str);
