@@ -33,7 +33,7 @@ public class Solution {
 			String[] paths=scan.nextLine().split(" ");
 			DijkstraSP d=new DijkstraSP(ewg, Integer.parseInt(paths[0]));
 			try{
-			System.out.format("%.1",(int) d.distance(Integer.parseInt(paths[1])));
+			System.out.format("%.1f",(int) d.distance(Integer.parseInt(paths[1])));
 			} catch(Exception e) {
 				System.out.println("No Path Found.");
 			}
