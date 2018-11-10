@@ -45,10 +45,17 @@ public class Solution {
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
             String[] path = scan.nextLine().split(" ");
+            String str = "";
             d = new DijkstraSP(ewg, Integer.parseInt(path[0]));
             double dist = d.distance(Integer.parseInt(path[1]));
+            for(Edge e:d.pathTo(Integer.parseInt(path[1]))){
+                str += e.either()+" ";
+            }
             d = new DijkstraSP(ewg, Integer.parseInt(path[1]));
             dist += d.distance(Integer.parseInt(path[2]));
+            for(Edge e:d.pathTo(Integer.parseInt(path[2]))){
+                str += e.either()+" ";
+            }
             System.out.println(dist);
 
 
