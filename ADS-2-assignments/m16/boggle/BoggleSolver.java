@@ -68,10 +68,10 @@ public class BoggleSolver {
 			dfs(board, row- 1, col - 1, word + check(board.getLetter(row-1, col - 1)), visited);
 			visited[row - 1][col - 1] = false;
 		}
-		// if( index(row - 1, col + 1) && !visited[row-1][col + 1] && isValid(word)) {
-		// 	dfs(board, row - 1, col + 1, word + check(board.getLetter(row-1, col + 1)), visited);
-		// 	visited[row - 1][col + 1] = false;
-		// }
+		if( index(row - 1, col + 1) && !visited[row-1][col + 1] && isValid(word)) {
+			dfs(board, row - 1, col + 1, word + check(board.getLetter(row-1, col + 1)), visited);
+			visited[row - 1][col + 1] = false;
+		}
 		if( index(row+1, col - 1) && !visited[row +1][col - 1] && isValid(word)) {
 			dfs(board, row+ 1, col - 1, word + check(board.getLetter(row+1, col - 1)), visited);
 			visited[row + 1][col - 1] = false;
