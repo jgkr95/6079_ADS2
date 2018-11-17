@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.ArrayList;
 
 
 public class Solution {
@@ -123,17 +124,40 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		HashMap<Integer, String> map = new HashMap<Integer, String>();
-		map.put(2, "abc");
-		map.put(3, "def");
-		map.put(4, "ghi");
-		map.put(5, "jkl");
-		map.put(6, "mno");
-		map.put(7, "pqrs");
-		map.put(8, "tuv");
-		map.put(9, "wxyz");
 
-		return null;
+		Queue<String> potentials = new Queue<>();
+		for (String pattern : possibleCombo(t9Signature)) {
+			if (tst.contains(pattern)) {
+				potentials.enqueue(pattern);
+			}
+		}
+		return potentials;
+
+	}
+	public static ArrayList<String> possibleCombo(String pattern) {
+		HashMap<Character, String> map = new HashMap<Character, String>();
+		map.put('2', "abc");
+		map.put('3', "def");
+		map.put('4', "ghi");
+		map.put('5', "jkl");
+		map.put('6', "mno");
+		map.put('7', "pqrs");
+		map.put('8', "tuv");
+		map.put('9', "wxyz");
+		ArrayList<String> res = new ArrayList<String>();
+		ArrayList<String> preres = new ArrayList<String>();
+		// res.add("");
+
+		for (int i = 0; i < pattern.length(); i++) {
+			for (String str : res) {
+				String letters = map.get(pattern.charAt(i));
+				for (int j = 0; j < letters.length(); j++)
+					preres.add(str + letters.charAt(j));
+			}
+			res = preres;
+			preres = new ArrayList<String>();
+		}
+		return res;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
