@@ -146,7 +146,7 @@ class T9 {
 		map.put('9', "wxyz");
 		ArrayList<String> res = new ArrayList<String>();
 		ArrayList<String> preres = new ArrayList<String>();
-		// res.add("");
+		res.add("");
 
 		for (int i = 0; i < pattern.length(); i++) {
 			for (String str : res) {
