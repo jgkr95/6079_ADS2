@@ -11,7 +11,9 @@ public final class Solution {
 
     }
     /**
-     * Main function to drive the program.
+     * This mehtod to print the energies in grid format.
+     * Time complexity is O(W*H)
+     * W is width and H is height.
      *
      * @param      fileName  The file name
      */
@@ -32,8 +34,9 @@ public final class Solution {
         }
     }
     /**
-     * { function to print }.
-     *
+     * This mehtod to print the seamline.
+     * Time complexity is O(W*H)
+     * W is width and H is height.
      * @param      carver     The carver
      * @param      seam       The seam
      * @param      direction  The direction
